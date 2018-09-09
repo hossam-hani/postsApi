@@ -21,3 +21,5 @@ Route::resource('posts', 'PostController');
 
 Route::get('comments/post/{id}','CommentController@getCommentsByPostId');
 Route::resource('comments', 'CommentController');
+
+Route::post('user/register','AuthController@register');
